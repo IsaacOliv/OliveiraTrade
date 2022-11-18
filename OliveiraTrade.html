@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="center">
+        <div class="botoes">
+            <a class="a1"href="#">Cadastrar</a>
+            <a class="a2"href="#">Entrar</a>
+        </div>
+        <div class="cadastro-form">
+            <div class="header">Insira seus dados</div>
+            <div class="cadastro_erro"></div>
+            <form action="ConfirmarCadastro.html" name="cadastroForm" method="get" onsubmit="return cadastroValid()">
+                <input type="text" name="nome" placeholder="Nome" autocomplete="off">
+                <input class="sobrenome" name="sobrenome" type="text" placeholder="Sobrenome" autocomplete="off">
+                <input class="email" name="email" type="text" placeholder="Email ou Telefone"autocomplete="off">
+                <input class="senha" name="senha" type="password" placeholder="Senha" autocomplete="off">
+                <input type="submit" value="Confirmar">
+            </form>            
+        </div>
+        <div class="login-form">
+            <div class="header header1">Insira seus dados</div>
+            <div class="login_erro"></div>
+            <form action="home.html" name="loginForm" method="get" onsubmit="return loginValid()">
+                <input class="email" name="emailLogin" type="text" placeholder="Email ou Telefone" autocomplete="off">
+                <input class="senha" name="senhaLogin" type="password" placeholder="Senha" autocomplete="off">
+                <input  type="submit" value="Confirmar">
+            </form>            
+        </div>
+<script src="script.js"></script>
+<script src="valid.js"></script>
+</body>
+</html>
