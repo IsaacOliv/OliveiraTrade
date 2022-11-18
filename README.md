@@ -1,0 +1,2 @@
+# OliveiraTrade
+Teste Pratico Everymind
