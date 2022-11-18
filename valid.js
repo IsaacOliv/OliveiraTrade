@@ -54,7 +54,7 @@ function loginValid(){
         emailLogin.focus();
         return false;
     }
-    if(senhaLogin.value.length <= 2){
+    if(senhaLogin.value.length <= 5){
         login_erro.style.display = "block";
         senhaLogin.style.border = "1px solid red";
         login_erro.innerText = "Por favor, insira sua senha";
